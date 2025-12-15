@@ -7,6 +7,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.platform.testTag
 
 
 @Composable
@@ -26,7 +27,8 @@ fun CalculatorButtons(viewModel: CalculatorViewModel) {
                     Button(
                         modifier = Modifier
                             .weight(1f)
-                            .height(64.dp),
+                            .height(64.dp)
+                            .testTag("btn_$label"),
                         onClick = {
                             when (label) {
                                 "C" -> viewModel.onAction(CalculatorAction.Clear)
