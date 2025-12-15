@@ -33,6 +33,14 @@ private val LightColorScheme = lightColorScheme(
     */
 )
 
+/**
+ * App theme wrapper that applies Material color scheme and typography.
+ * It supports dynamic colors on Android 12+ and automatic dark theme selection.
+ *
+ * @param darkTheme Whether to use the dark color scheme; defaults to system setting.
+ * @param dynamicColor Whether to use dynamic color (Android 12+).
+ * @param content The Composable hierarchy to be themed.
+ */
 @Composable
 fun CalculatorTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),

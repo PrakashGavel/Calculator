@@ -2,6 +2,9 @@ package com.example.calculator.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
+/**
+ * Color palette used by the app's light and dark themes.
+ */
 val Purple80 = Color(0xFFD0BCFF)
 val PurpleGrey80 = Color(0xFFCCC2DC)
 val Pink80 = Color(0xFFEFB8C8)

@@ -9,6 +9,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.testTag
 
 
+/**
+ * Calculator screen showing the display and keypad.
+ *
+ * @param viewModel The [CalculatorViewModel] providing state and actions.
+ */
 @Composable
 fun CalculatorScreen(viewModel: CalculatorViewModel) {
     Column(

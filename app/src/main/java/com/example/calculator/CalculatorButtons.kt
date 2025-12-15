@@ -10,6 +10,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.platform.testTag
 
 
+/**
+ * Keypad for the calculator. Emits actions to the provided [CalculatorViewModel]
+ * when a button is pressed.
+ *
+ * @param viewModel The [CalculatorViewModel] to receive button actions.
+ */
 @Composable
 fun CalculatorButtons(viewModel: CalculatorViewModel) {
     val buttons = listOf(
